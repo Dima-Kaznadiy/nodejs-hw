@@ -1,36 +1,25 @@
 {
   "name": "nodejs-hw",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Express app for notes API",
+  "main": "src/server.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dima-Kaznadiy/nodejs-hw.git"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Dima-Kaznadiy/nodejs-hw/issues"
-  },
-  "homepage": "https://github.com/Dima-Kaznadiy/nodejs-hw#readme",
   "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "pino-http": "^11.0.0"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pino-http": "^9.0.0"
   },
   "devDependencies": {
-    "eslint": "^10.3.0",
-    "nodemon": "^3.1.14",
-    "prettier": "^3.8.3"
-  },
-  "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "eslint": "^9.0.0",
+    "nodemon": "^3.0.0",
+    "prettier": "^3.0.0"
   }
 }
