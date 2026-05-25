@@ -12,11 +12,19 @@ import { errorHandler } from './middleware/errorHandler.js';
 
 import { errors } from 'celebrate';
 
+import cookieParser from 'cookie-parser';
+
+import authRoutes from './routes/authRoutes.js';
+
 dotenv.config();
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+
+app.use(authRoutes);
+
+app.use(cookieParser());
 
 app.use(logger);
 
